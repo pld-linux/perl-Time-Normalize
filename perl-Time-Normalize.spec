@@ -1,13 +1,12 @@
 #
 # Conditional build:
-%bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Time
 %define		pnam	Normalize
-Summary:	Time::Normalize
-Summary(pl):	Time::Normalize
+Summary:	Time::Normalize - convert time and date values into standardized components
+Summary(pl):	Time::Normalize - konwersja warto∂ci czasu i dany na ustandaryzowane sk≥adniki
 Name:		perl-Time-Normalize
 Version:	0.03
 Release:	0.1
@@ -16,14 +15,11 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8b2e0846694b4d1e31be77099ebb5cd3
+URL:		http://search.cpan.org/dist/Time-Normalize/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with autodeps} || %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_noautoreq	'perl(anything_fake_or_conditional)'
 
 %description
 This module performs simple but tedious (and error-prone) checks on
@@ -32,8 +28,9 @@ sanitized, standardized manner, suitable for use in the remainder of
 your program.
 
 %description -l pl
-Ten modu≈Ç wykonuje proste ale nudne sprawdzenia na danych wejsciowych
-i zwraca czas lub/i datƒô w postaci komponent√≥w u≈ºywalnych w programie.
+Ten modu≥ wykonuje proste ale nudne sprawdzenia na danych wejsciowych
+i zwraca czas i/lub sk≥adniki daty w standardowej postaci,
+uøywalnej w pozosta≥ej czÍ∂ci programu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
