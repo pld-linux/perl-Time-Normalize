@@ -9,7 +9,7 @@ Summary:	Time::Normalize - convert time and date values into standardized compon
 Summary(pl):	Time::Normalize - konwersja warto¶ci czasu i dany na ustandaryzowane sk³adniki
 Name:		perl-Time-Normalize
 Version:	0.03
-Release:	0.1
+Release:	1
 # "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
