@@ -6,7 +6,7 @@
 %define		pdir	Time
 %define		pnam	Normalize
 Summary:	Time::Normalize - convert time and date values into standardized components
-Summary(pl.UTF-8):   Time::Normalize - konwersja wartości czasu i dany na ustandaryzowane składniki
+Summary(pl.UTF-8):	Time::Normalize - konwersja wartości czasu i dany na ustandaryzowane składniki
 Name:		perl-Time-Normalize
 Version:	0.03
 Release:	1
