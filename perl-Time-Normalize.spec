@@ -7,13 +7,13 @@
 Summary:	Time::Normalize - convert time and date values into standardized components
 Summary(pl.UTF-8):	Time::Normalize - konwersja wartości czasu i dany na ustandaryzowane składniki
 Name:		perl-Time-Normalize
-Version:	0.08
-Release:	2
+Version:	0.09
+Release:	1
 # "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9861229eb6820439d797cd968eec287e
+# Source0-md5:	ccb9c8b50ff90dc462150b3a484f90df
 URL:		http://search.cpan.org/dist/Time-Normalize/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
